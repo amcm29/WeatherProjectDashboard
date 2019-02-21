@@ -25,3 +25,13 @@
     width: 100%;
     height: auto;
 }
+
+.box {
+    color: #fff;
+    background: #cc5500;
+}
+   
+  .box-single {
+    padding: 50px;
+    margin: 70px;
+}
