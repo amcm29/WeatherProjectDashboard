@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude and Weather</title>
+  <title>Comparisons</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   
@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-          <li><a href="data.html">Data </a></li>
+          <li><a href="#">Data </a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Map Links <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -57,27 +57,53 @@
         </div>
     </div>
   </nav>
-  <!-- Visualization Page  -->
+
+  <!-- Comparisons Page  -->
   <!-- A descriptive title and a heading tag -->
-  <!-- The plot and a paragraph describing the plot -->
-  <div class="container">
-      <!--Normally these medium columns go full wide on small screen sizes-->
-      <div class="row">
-          <div class="col-md-8">
-              <div>
-                  <h1><strong>Summary of the Latitude Project</strong></h1>
-                  <hr />
-                  <img class = "centerphoto" src="https://raw.githubusercontent.com/amcm29/WeatherProjectDashboard/master/nasa_katrina2.png" alt="max temp chart">
-                  <p></p>
-              </div>
-          </div>
-          
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
-        Weather data was obtained from OpenWeatherMap API<br>
-        Image from NASA (https://www.nasa.gov/press-release/goddard/nasa-images-of-hurricane-katrina-and-2005-storm-season-available)
+  <!-- Containing all visualization plots for easy comparison -->
+  <div class="box box-single">
+    <section id="intro">
+            <h1>Comparison of the Four Analyses</h1>
+            <hr>
+
+            <section id="summary">
+                    <p>Click any plot for an in-depth analysis.</p>
+            </section>
+    </section>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <h3>Latitude vs Temperature</h3>
+            <figure>
+                <a href="temp.html">
+                    <img id="landing-viz" src="Temperaturevslatitude.png" alt="Latitude vs. Temperature"></a>
+            </figure>
         </div>
-      </div>
-  </div>
+    
+        <div class="col-xs-12 col-md-6">
+            <h3>Latitude vs. Humidity</h3>
+            <figure>
+                <a href="humid.html">
+                    <img id="landing-viz" src="Latitudevshumidity.png" alt="Latitude vs. Humidity"></a>
+            </figure>
+        </div>
+    
+        <div class="col-xs-12 col-md-6">
+            <h3>Latitude vs. Cloudiness</h3>
+            <figure>
+                <a href="cloud.html">
+                    <img id="landing-viz" src="Latitudevscloudiness.png" alt="Latitude vs. Cloudiness"></a>
+            </figure>
+        </div>
+    
+        <div class="col-xs-12 col-md-6">
+            <h3>Latitude vs. Wind Speed</h3>
+            <figure>
+                <a href="wind.html">
+                    <img id="landing-viz" src="Latitudevswindspeed.png" alt="Latitude vs. Wind Speed"></a>
+            </figure>
+        </div>
+
+</div>
   </body>
+  </html>
