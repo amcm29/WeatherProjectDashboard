@@ -17,7 +17,6 @@
     margin-top: 15px;
     margin-right: 0px;
     margin-left: 0px;
-    color: #cc5500;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif 
 }  
 
@@ -26,10 +25,6 @@
     height: auto;
 }
 
-.box {
-    color: #fff;
-    background: #cc5500;
-}
    
   .box-single {
     padding: 50px;
